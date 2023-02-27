@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>FondoDeBikini</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Add the following two lines to include Bootstrap CSS and JS files -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="index-body">
+    <div id="paginaNueva"></div>
+    <!-- Add the navbar markup below -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a
+        class="navbar-brand"
+        href="images/flower3.svg"
+        style="color: #ff80e5; font-weight: bold; font-size: 24px"
+        >FondoDeBikini</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border-color: #ff80e5"
+      >
+        <span class="navbar-toggler-icon" style="color: #ff80e5"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <button
+              type="button"
+              class="btn btn-primary mr-2"
+              onclick="cambiarPagina('pages/bobesponja.html'); return false"
+            >
+              Bob Esponja
+            </button>
+          </li>
+          <li class="nav-item active">
+            <button
+              type="button"
+              class="btn btn-primary mr-2"
+              onclick="cambiarPagina('pages/calamardo.html'); return false"
+            >
+              Calamardo
+            </button>
+          </li>
+          <li class="nav-item active">
+            <button
+              type="button"
+              class="btn btn-primary mr-2"
+              onclick="cambiarPagina('pages/patricio.html'); return false"
+            >
+              Patricio
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Bienvenido a Fondo de Bikini</h1>
+    <div id="contenido">
+      <div class="images">
+        <img
+          class="imagenPatricio"
+          onclick="cambiarPagina('pages/patricio.html'); return false"
+          src="images/patricio.png"
+          alt="Patricio"
+        />
+        <img
+          src="images/calamardo.png"
+          onclick="cambiarPagina('pages/calamardo.html'); return false"
+          alt="Calamardo"
+        />
+        <img
+          class="imagenBob"
+          onclick="cambiarPagina('pages/bobesponja.html'); return false"
+          src="images/bobesponja.png"
+          alt="Bob Esponja"
+        />
+      </div>
+    </div>
+
+    <div>
+      <video
+        src="images/fondo.mp4"
+        autoplay="true"
+        muted="true"
+        loop="true"
+      ></video>
+    </div>
+  </body>
+</html>

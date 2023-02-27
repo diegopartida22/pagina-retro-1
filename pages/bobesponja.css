@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Bob-esponja";
+  src: url("../fonts/KrabbyPatty.ttf") format("truetype");
+}
+
+html {
+  background-color: #787000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #787000;
+}
+
+.bob-h1 {
+  color: #feef2a;
+  font-size: 50px;
+  text-shadow: #c4b700 2px 0 7px;
+  font-family: "Bob-esponja";
+  text-align: center;
+  background-color: #787000;
+  margin: 0;
+}
+
+.boton-bob {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  z-index: 9999;
+  background-color: #feef2a;
+  color: #787000;
+  font-size: 20px;
+  font-family: "Bob-esponja";
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #c4b700;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #feef2a;
+  text-shadow: #c4b700 2px 0 7px;
+  font-family: "Bob-esponja";
+}
+
+strong {
+  color: white;
+  text-shadow: #7e6d9a 2px 0 7px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: #7e6d9a 2px 0 7px;
+  font-family: "bob-esponja";
+  font-size: 18px;
+  background-color: #787000;
+}
+
+.info {
+  width: 45%;
+  padding-left: 10%;
+  text-align: justify;
+}
+
+.imagenBob {
+  width: 90%;
+  height: auto;
+  padding-left: 10%;
+  animation: onda 1.5s ease-in-out infinite;
+}
+
+@keyframes onda {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenBob {
+    width: 80%;
+    margin-top: 20px;
+    float: none;
+  }
+}

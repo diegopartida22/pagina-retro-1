@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Bob-esponja";
+  src: url("fonts/KrabbyPatty.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+a {
+  font-family: "Bob-esponja";
+}
+
+h1 {
+  color: #ff80e5;
+  font-size: 50px;
+  text-shadow: #f7ef20 1px 0 7px;
+  font-family: "Bob-esponja";
+  text-align: center;
+  margin-top: 0px;
+}
+
+img {
+  width: auto;
+  height: 20vh;
+}
+
+.images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 45vh;
+  animation: onda 1.5s ease-in-out infinite;
+}
+
+.index-body {
+  background-color: transparent;
+}
+
+.imagenPatricio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: -25px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 105%;
+  min-height: 100%;
+  transform: translateX(calc((100% - 100vw) / 2));
+  z-index: -2;
+}
+
+@keyframes onda {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .images {
+    top: 32vh;
+  }
+
+  .imagenPatricio {
+    display: none; /* hide images container on small screens */
+  }
+
+  .imagenBob {
+    display: none; /* hide images container on small screens */
+  }
+}
