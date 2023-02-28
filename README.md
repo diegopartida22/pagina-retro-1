@@ -21,5 +21,5 @@ El sitio web está actualmente desplegado en GitHub Pages en el siguiente enlace
 ## Instalación
 No se requiere instalación para ver el sitio web. Sin embargo, si desea modificar el código y ejecutarlo en su computadora local, siga los siguientes pasos:
 
-1. Clone el repositorio en su computadora local utilizando git clone https://github.com/diegopartida22/pagina-retro-1.git
-2. Abra el archivo index.html en su navegador web.
+- [ ] Clone el repositorio en su computadora local utilizando `git clone https://github.com/diegopartida22/pagina-retro-1.git`
+- [ ] Abra el archivo index.html en su navegador web.
